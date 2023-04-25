@@ -14,6 +14,8 @@ async function main() {
 
   // 배포가 완료될때까지 대기
   await deployedWhitelistContract.deployed();
+
+  console.log("Whitelist Contract Address: ", deployedWhitelistContract.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
